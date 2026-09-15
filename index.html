@@ -30,6 +30,10 @@
     padding:9px 13px;border-radius:999px;cursor:pointer;font-size:12.5px;font-weight:600;font-family:inherit;white-space:nowrap;flex-shrink:0;}
   nav button.active{background:#2E8A57;color:#fff;}
   .side-note{margin-top:12px;border:1px solid #2A5138;border-radius:10px;padding:9px 11px;font-size:10.5px;color:#9FB9AB;line-height:1.5;}
+  .sidebar-contact{margin-top:10px;padding:9px 11px;border-radius:10px;background:#123821;display:flex;flex-direction:column;gap:4px;}
+  .sidebar-contact-label{font-size:9.5px;font-weight:800;letter-spacing:.08em;color:#6FA080;margin-bottom:2px;}
+  .sidebar-contact a{font-size:11.5px;color:#C9E8D4;text-decoration:none;font-weight:600;}
+  .sidebar-contact a:active{opacity:.7;}
   .dot{display:inline-block;width:7px;height:7px;border-radius:999px;background:#72C18F;margin-right:6px;}
   main{flex:1;padding:16px 14px 50px;max-width:1000px;width:100%;margin:0 auto;}
   @media(min-width:820px){
@@ -127,6 +131,12 @@
     <nav id="nav"></nav>
     <div class="side-note"><span class="dot"></span>Cycle 01 · Masaka/Koya tomato — everyone sees the same live numbers. Only the owner can edit.</div>
     <div id="pending-note"></div>
+    <div class="sidebar-contact">
+      <div class="sidebar-contact-label">CONTACT US</div>
+      <a href="mailto:greenxfarm@gmail.com">greenxfarm@gmail.com</a>
+      <a href="tel:+2349074509338">+234 907 450 9338 (Call)</a>
+      <a href="https://wa.me/2348076673404">+234 807 667 3404 (WhatsApp)</a>
+    </div>
     <div id="auth-area" style="margin-top:10px;"></div>
   </aside>
   <main id="main"></main>
@@ -134,16 +144,39 @@
 <footer>
   <b>GreenX Agro-Industrial Group</b><br/>
   Building a Nigerian agro-industrial group, one proven layer at a time. Headquarters: Abuja, Nigeria.
-  <div style="margin-top:10px;">
-    <a href="mailto:greenxfarm@gmail.com" style="color:#9FD3B2;text-decoration:none;">greenxfarm@gmail.com</a>
-    &nbsp;·&nbsp;
-    <a href="tel:+2348076673404" style="color:#9FD3B2;text-decoration:none;">+234 807 667 3404</a>
-    &nbsp;(also WhatsApp)&nbsp;·&nbsp;
-    <a href="https://greenxfarm.com" style="color:#9FD3B2;text-decoration:none;">greenxfarm.com</a>
+  <div style="margin-top:16px;padding-top:14px;border-top:1px solid #2A5138;">
+    <div style="font-size:11px;font-weight:800;letter-spacing:.08em;color:#9FD3B2;margin-bottom:10px;">GET IN TOUCH</div>
+    <div style="display:flex;flex-wrap:wrap;gap:22px;">
+      <a href="mailto:greenxfarm@gmail.com" style="color:#fff;text-decoration:none;font-size:13px;display:flex;align-items:center;gap:7px;">
+        <span style="width:26px;height:26px;border-radius:7px;background:#173C26;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        </span>
+        greenxfarm@gmail.com
+      </a>
+      <a href="tel:+2349074509338" style="color:#fff;text-decoration:none;font-size:13px;display:flex;align-items:center;gap:7px;">
+        <span style="width:26px;height:26px;border-radius:7px;background:#173C26;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </span>
+        +234 907 450 9338 <span style="color:#9FB9AB;">(Call)</span>
+      </a>
+      <a href="https://wa.me/2348076673404" style="color:#fff;text-decoration:none;font-size:13px;display:flex;align-items:center;gap:7px;">
+        <span style="width:26px;height:26px;border-radius:7px;background:#173C26;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </span>
+        +234 807 667 3404 <span style="color:#9FB9AB;">(WhatsApp)</span>
+      </a>
+      <a href="https://greenxfarm.com" style="color:#fff;text-decoration:none;font-size:13px;display:flex;align-items:center;gap:7px;">
+        <span style="width:26px;height:26px;border-radius:7px;background:#173C26;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10Z"/></svg>
+        </span>
+        greenxfarm.com
+      </a>
+    </div>
   </div>
   <div class="legal">
     Nothing on this app is an offer of securities or investment advice. Figures shown are conservative planning assumptions from the GreenX business plan, or actual logged data where stated — never a guarantee of return. Support to GreenX carries real risk, including partial or total loss.
   </div>
+</footer>
 </footer>
 
 <script>
@@ -179,9 +212,9 @@ function loadPending() {
 function savePending(list) {
   try { localStorage.setItem(PENDING_STORE_KEY, JSON.stringify(list)); } catch (e) { /* ignore */ }
 }
-function queuePending(table, row, localId) {
+function queuePending(table, row, localId, receiptBase64) {
   const list = loadPending();
-  list.push({ localId, table, row });
+  list.push({ localId, table, row, receiptBase64: receiptBase64 || null });
   savePending(list);
 }
 function removePending(localId) {
@@ -192,6 +225,10 @@ async function trySyncPending() {
   if (!list.length || !state.session) return;
   for (const item of list) {
     try {
+      if (item.receiptBase64 && !item.row.receipt_url) {
+        const blob = base64ToBlob(item.receiptBase64);
+        item.row.receipt_url = await uploadReceipt(blob);
+      }
       const saved = await sbInsert(item.table, item.row);
       removePending(item.localId);
       const arr = item.table === "expenses" ? state.expenses : state.sales;
@@ -203,6 +240,53 @@ async function trySyncPending() {
     }
   }
   render();
+}
+
+// --- Receipt photos: compress client-side, upload to Supabase Storage ---
+function compressImage(file, maxDim = 900, quality = 0.6) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    const reader = new FileReader();
+    reader.onload = (e) => { img.src = e.target.result; };
+    reader.onerror = reject;
+    img.onload = () => {
+      let { width, height } = img;
+      if (width > height && width > maxDim) { height = Math.round(height * maxDim / width); width = maxDim; }
+      else if (height > maxDim) { width = Math.round(width * maxDim / height); height = maxDim; }
+      const canvas = document.createElement("canvas");
+      canvas.width = width; canvas.height = height;
+      canvas.getContext("2d").drawImage(img, 0, 0, width, height);
+      canvas.toBlob((blob) => blob ? resolve(blob) : reject(new Error("compress failed")), "image/jpeg", quality);
+    };
+    img.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+function blobToBase64(blob) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = reject;
+    reader.readAsDataURL(blob);
+  });
+}
+function base64ToBlob(dataUrl) {
+  const [meta, b64] = dataUrl.split(",");
+  const mime = meta.match(/:(.*?);/)[1];
+  const bin = atob(b64);
+  const arr = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);
+  return new Blob([arr], { type: mime });
+}
+async function uploadReceipt(blob) {
+  const filename = `receipt-${Date.now()}-${uid()}.jpg`;
+  const res = await fetch(`${SUPABASE_URL}/storage/v1/object/receipts/${filename}`, {
+    method: "POST",
+    headers: { ...authHeaders(false), "Content-Type": "image/jpeg" },
+    body: blob,
+  });
+  if (!res.ok) throw new Error(`Failed to upload receipt: ${res.status}`);
+  return `${SUPABASE_URL}/storage/v1/object/public/receipts/${filename}`;
 }
 
 function authHeaders(json) {
@@ -228,727 +312,4 @@ async function sbInsert(table, row, _retried) {
   if (res.status === 401 && !_retried && state.session && state.session.refresh_token) {
     const refreshed = await refreshAccessToken();
     if (refreshed) return sbInsert(table, row, true);
-    throw new Error("SESSION_EXPIRED");
-  }
-  if (!res.ok) throw new Error(`Failed to save to ${table}: ${res.status}`);
-  const data = await res.json();
-  return data[0];
-}
-async function sbDelete(table, id, _retried) {
-  const res = await fetch(`${SUPABASE_URL}/rest/v1/${table}?id=eq.${id}`, {
-    method: "DELETE",
-    headers: authHeaders(false),
-  });
-  if (res.status === 401 && !_retried && state.session && state.session.refresh_token) {
-    const refreshed = await refreshAccessToken();
-    if (refreshed) return sbDelete(table, id, true);
-    throw new Error("SESSION_EXPIRED");
-  }
-  if (!res.ok) throw new Error(`Failed to delete from ${table}: ${res.status}`);
-}
-
-// --- Owner auth (Supabase Auth — email/password, session kept in this browser only) ---
-function loadSession() {
-  try {
-    const raw = localStorage.getItem(SESSION_STORE_KEY);
-    if (raw) state.session = JSON.parse(raw);
-  } catch (e) { /* ignore */ }
-}
-function saveSession(session) {
-  state.session = session;
-  try {
-    if (session) localStorage.setItem(SESSION_STORE_KEY, JSON.stringify(session));
-    else localStorage.removeItem(SESSION_STORE_KEY);
-  } catch (e) { /* ignore */ }
-}
-async function refreshAccessToken() {
-  try {
-    const res = await fetch(`${SUPABASE_URL}/auth/v1/token?grant_type=refresh_token`, {
-      method: "POST",
-      headers: { apikey: SUPABASE_KEY, "Content-Type": "application/json" },
-      body: JSON.stringify({ refresh_token: state.session.refresh_token }),
-    });
-    const data = await res.json();
-    if (!res.ok || !data.access_token) return false;
-    saveSession({ access_token: data.access_token, refresh_token: data.refresh_token || state.session.refresh_token, email: state.session.email });
-    return true;
-  } catch (e) {
-    return false;
-  }
-}
-async function login(email, password) {
-  const res = await fetch(`${SUPABASE_URL}/auth/v1/token?grant_type=password`, {
-    method: "POST",
-    headers: { apikey: SUPABASE_KEY, "Content-Type": "application/json" },
-    body: JSON.stringify({ email, password }),
-  });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.error_description || data.msg || "Login failed");
-  saveSession({ access_token: data.access_token, refresh_token: data.refresh_token, email });
-}
-function logout() {
-  saveSession(null);
-  render();
-}
-
-
-const ICONS = {
-  leaf: '<path d="M11 20A7 7 0 0 1 4 13c0-4 3-8 9-10 1 5 3 7 3 10a7 7 0 0 1-5 7Z"/><path d="M4 13c3 0 6-1 8-4"/>',
-  sprout: '<path d="M7 20h10"/><path d="M12 20V10"/><path d="M9 6a3 3 0 0 0 3 3 3 3 0 0 0-3-3Z"/><path d="M15 4a4 4 0 0 0-3 6 4 4 0 0 0 3-6Z"/>',
-  wallet: '<path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/>',
-  trending: '<path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/>',
-  users: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
-  shield: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="M9 12l2 2 4-4"/>',
-  chevron: '<path d="M6 9l6 6 6-6"/>',
-  plus: '<path d="M12 5v14M5 12h14"/>',
-  x: '<path d="M18 6 6 18"/><path d="M6 6l12 12"/>',
-  globe: '<circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10Z"/>',
-};
-function icon(name, size=15, extraClass="") {
-  return `<svg class="${extraClass}" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${ICONS[name]}</svg>`;
-}
-
-const NAV = [
-  { id:"overview", label:"Overview", icon:"leaf" },
-  { id:"operations", label:"Tomato Cycle 01", icon:"sprout" },
-  { id:"finance", label:"Finance", icon:"wallet" },
-  { id:"ginger", label:"Commodities", icon:"trending" },
-  { id:"partners", label:"Partners & Moat", icon:"globe" },
-  { id:"supporters", label:"Supporter Portal", icon:"users" },
-  { id:"governance", label:"Governance", icon:"shield" },
-];
-
-async function loadData() {
-  state.loadError = null;
-  try {
-    const [exp, sal] = await Promise.all([sbGet("expenses"), sbGet("sales")]);
-    state.expenses = exp;
-    state.sales = sal;
-  } catch(err) {
-    console.error(err);
-    state.loadError = "Couldn't reach the database. Check your connection and reload.";
-  }
-  state.loaded = true;
-  render();
-}
-
-function totals() {
-  const totalSpent = state.expenses.reduce((s,e)=>s+Number(e.total_cost||0),0);
-  const totalRevenue = state.sales.reduce((s,r)=>s+Number(r.baskets||0)*Number(r.price||0),0);
-  const totalBaskets = state.sales.reduce((s,r)=>s+Number(r.baskets||0),0);
-  const spentByCategory = {};
-  state.expenses.forEach(e => spentByCategory[e.category] = (spentByCategory[e.category]||0) + Number(e.total_cost||0));
-  return { totalSpent, totalRevenue, totalBaskets, surplus: totalRevenue-totalSpent, spentByCategory };
-}
-
-function renderNav() {
-  const nav = document.getElementById("nav");
-  nav.innerHTML = NAV.map(n => `
-    <button data-tab="${n.id}" class="${state.tab===n.id?'active':''}">${icon(n.icon,15)} ${n.label}</button>
-  `).join("");
-  nav.querySelectorAll("button").forEach(b => b.addEventListener("click", () => { state.tab = b.dataset.tab; render(); }));
-}
-
-function metricCard(label, value, sub, accent) {
-  return `<div class="stat-card"><div class="label">${label}</div><div class="metric-val" style="${accent?`color:${accent}`:''}">${value}</div>${sub?`<div class="metric-sub">${sub}</div>`:''}</div>`;
-}
-
-function renderOverview() {
-  const { totalSpent, totalRevenue, surplus } = totals();
-  const pct = Math.max(0, Math.min(100, (totalSpent/BUDGET.total)*100));
-  const steps = [
-    ["Capital & Market Validation","Tomato pilot, first verified records","done","IN EXECUTION"],
-    ["Cash Engine & Export Readiness","Scale tomato, test sesame, begin ginger learning cycle","later","NEXT"],
-    ["GreenX Estate Establishment","Permanent land, after ₦400M retained capital","later","PLANNED"],
-    ["Processing & Agro-Industrial Expansion","Ginger, shea, cocoa aggregation at scale","later","PLANNED"],
-    ["Integrated Agricultural Group","Full commodity portfolio, regional networks","later","PLANNED"],
-  ];
-  return `
-    <div class="hero">
-      <div class="eyebrow" style="color:#9FD3B2">GREENX AGRO-INDUSTRIAL GROUP</div>
-      <h2>From one hectare to an integrated agro-industrial group.</h2>
-      <p>This dashboard tracks what's real today — actual spend and actual sales on Cycle 01 — separately from the long-term plan. Nothing here is a projection unless it's labeled one.</p>
-      <div class="cta-row">
-        <button class="cta-solid" onclick="state.tab='operations';render();">Log today's activity</button>
-        <button class="cta-outline" onclick="state.tab='ginger';render();">See the roadmap</button>
-      </div>
-    </div>
-    <div class="grid3" style="margin-bottom:14px;">
-      <div class="card"><div class="label" style="color:var(--green);">GREENX GROUP</div><p style="font-size:12px;color:var(--muted);margin:6px 0 0;">The commercial business — this cycle, and every future one.</p></div>
-      <div class="card"><div class="label" style="color:var(--green);">GREENX FARMER</div><p style="font-size:12px;color:var(--muted);margin:6px 0 0;">Future farmer-facing app — not yet built, planned after this proves out.</p></div>
-      <div class="card"><div class="label" style="color:var(--green);">GREENX OS</div><p style="font-size:12px;color:var(--muted);margin:6px 0 0;">This dashboard — the record-keeping layer underneath everything.</p></div>
-    </div>
-    <div class="grid4">
-      ${metricCard("Cycle 01 budget", NAIRA(BUDGET.total), "Masaka/Koya · 1 ha tomato")}
-      ${metricCard("Actual spend to date", state.loaded?NAIRA(totalSpent):"…", pct.toFixed(0)+"% of budget deployed", "var(--green)")}
-      ${metricCard("Actual revenue to date", state.loaded?NAIRA(totalRevenue):"…", "From logged sales", "var(--green)")}
-      ${metricCard("Surplus so far", state.loaded?NAIRA(surplus):"…", "Revenue − spend", surplus>=0?"var(--green)":"#B23B3B")}
-    </div>
-    <div class="card">
-      <div class="section-title">Budget deployed</div>
-      <div class="progress"><div class="progress-fill" style="width:${pct}%"></div></div>
-      <div class="row-between" style="font-size:12px;color:var(--muted);margin-top:6px;">
-        <span>${NAIRA(totalSpent)} spent</span><span>${NAIRA(BUDGET.total)} budget</span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="section-title">From one hectare to an integrated group</div>
-      ${steps.map(([title,desc,cls,tag],i)=>`
-        <div class="step-row">
-          <div class="step-num ${cls}">${String(i+1).padStart(2,'0')}</div>
-          <div style="flex:1;">
-            <div class="row-between"><b style="font-size:13.5px;">${title}</b><span class="badge" style="color:${cls==='done'?'var(--green)':'var(--muted)'};background:${cls==='done'?'var(--greentint)':'#EEF2EF'};">${tag}</span></div>
-            <div style="font-size:12px;color:var(--muted);margin-top:2px;">${desc}</div>
-          </div>
-        </div>`).join("")}
-    </div>
-  `;
-}
-
-function renderOperations() {
-  const { totalSpent, totalBaskets, totalRevenue } = totals();
-  const canEdit = !!state.session;
-  const expenseRows = state.expenses.length ? state.expenses.map(e => `
-    <div class="list-row">
-      <div><b>${e.category} — ${NAIRA(e.total_cost)}</b> ${e.pending?`<span class="badge" style="background:var(--goldtint);color:var(--gold);">PENDING SYNC</span>`:""}<div class="list-sub">${e.date||"no date"}${e.description?` · ${e.description}`:''}</div></div>
-      ${canEdit && !e.pending ? `<button class="remove-btn" data-remove-expense="${e.id}">Remove</button>` : ""}
-    </div>`).join("") : `<div style="color:var(--muted);font-size:13px;">No expenses logged yet.</div>`;
-  const saleRows = state.sales.length ? state.sales.map(s => `
-    <div class="list-row">
-      <div><b>${s.baskets} baskets @ ${NAIRA(s.price)} — ${s.buyer}</b> ${s.pending?`<span class="badge" style="background:var(--goldtint);color:var(--gold);">PENDING SYNC</span>`:""}<div class="list-sub">${s.date||"no date"} · ${NAIRA(s.baskets*s.price)}</div></div>
-      ${canEdit && !s.pending ? `<button class="remove-btn" data-remove-sale="${s.id}">Remove</button>` : ""}
-    </div>`).join("") : `<div style="color:var(--muted);font-size:13px;">No sales logged yet.</div>`;
-
-  const expenseForm = (canEdit && state.showExpenseForm) ? `
-    <div class="form-box">
-      <div class="field"><label>Date <span style="color:#B23B3B;">*</span></label><input type="date" id="exp-date" required/></div>
-      <div class="field"><label>Category</label><select id="exp-category">${CATEGORIES.map(c=>`<option value="${c}">${c}</option>`).join("")}</select></div>
-      <div class="field"><label>Description</label><input id="exp-desc" placeholder="e.g. Diesel for pump"/></div>
-      <div class="field"><label>Total cost (\u20a6)</label><input type="number" id="exp-cost" placeholder="0"/></div>
-      <button class="save-btn" id="exp-save">Save expense</button>
-    </div>` : "";
-
-  const saleForm = (canEdit && state.showSaleForm) ? `
-    <div class="form-box">
-      <div class="field"><label>Date <span style="color:#B23B3B;">*</span></label><input type="date" id="sale-date" required/></div>
-      <div class="field"><label>Baskets sold</label><input type="number" id="sale-baskets" placeholder="0"/></div>
-      <div class="field"><label>Price per basket (\u20a6)</label><input type="number" id="sale-price" value="50000"/></div>
-      <div class="field"><label>Buyer channel</label><select id="sale-buyer">${CHANNELS.map(c=>`<option value="${c}">${c}</option>`).join("")}</select></div>
-      <button class="save-btn" id="sale-save">Save sale</button>
-    </div>` : "";
-
-  const expenseToggle = canEdit
-    ? `<button class="pill-btn" id="toggle-expense-form">${icon(state.showExpenseForm?'x':'plus',13)} ${state.showExpenseForm?'Close':'Log expense'}</button>`
-    : `<span style="font-size:11px;color:var(--muted);">View only</span>`;
-  const saleToggle = canEdit
-    ? `<button class="pill-btn" id="toggle-sale-form">${icon(state.showSaleForm?'x':'plus',13)} ${state.showSaleForm?'Close':'Log sale'}</button>`
-    : `<span style="font-size:11px;color:var(--muted);">View only</span>`;
-
-  return `
-    <div class="eyebrow">OPERATIONS · PILOT / PROOF-OF-CONCEPT</div>
-    <h1 class="page-title">Masaka / Koya — Cycle 01</h1>
-    <p class="sub">Log every expense and every sale here. This replaces the paper/spreadsheet record — it's the one place actual cycle data lives. Tomato is GreenX's operating laboratory, not its long-term flagship — see Commodities for the six-crop core portfolio.</p>
-    <div class="grid2" style="margin-top:16px;">
-      <div class="card">
-        <div class="row-between" style="margin-bottom:10px;">
-          <div class="section-title">Expenses (${NAIRA(totalSpent)})</div>
-          ${expenseToggle}
-        </div>
-        ${expenseForm}
-        ${expenseRows}
-      </div>
-      <div class="card">
-        <div class="row-between" style="margin-bottom:10px;">
-          <div class="section-title">Sales (${totalBaskets} baskets · ${NAIRA(totalRevenue)})</div>
-          ${saleToggle}
-        </div>
-        ${saleForm}
-        ${saleRows}
-      </div>
-    </div>
-    <div class="card">
-      <div class="section-title">Field checklist</div>
-      ${accordion("land","Land & people","Confirm renewal/lease terms; confirm the three growers; arrange accommodation and welfare; define responsibilities before planting.")}
-      ${accordion("irrigation","Irrigation","Quote pump options, pipes, hose, fuel and maintenance. Passon is a preference, not a fixed spec — reliability and fuel efficiency decide the final purchase.")}
-      ${accordion("inputs","Crop inputs","Seed, fertiliser, crop protection, nursery/land preparation stay within the \u20a63m planning envelope — log each as it happens.")}
-      ${accordion("harvest","Harvest & sales","Wholesalers, market women and retailers come first; selected supermarkets can be tested. Restaurants and hotels are deliberately not a startup channel.")}
-    </div>
-  `;
-}
-
-let accOpen = {};
-function accordion(id, title, body) {
-  const open = !!accOpen[id];
-  return `
-    <div class="accordion">
-      <button class="accordion-head ${open?'open':''}" data-acc="${id}">
-        <span>${title}</span>${icon('chevron',16,'chev'+(open?' open':''))}
-      </button>
-      <div class="accordion-body ${open?'open':''}">${body}</div>
-    </div>`;
-}
-
-function renderProjection() {
-  const c = YIELD_SCENARIOS.conservative;
-  const revenue = c.baskets * PLANNING_BASKET_PRICE;
-  const margin = revenue - BUDGET.total;
-  return `
-    <div class="projection-card">
-      <span class="projection-tag">${icon('warning',11)} PROJECTED — NOT ACTUAL</span>
-      <div class="section-title" style="margin-bottom:4px;">If the pilot performs at the conservative scenario</div>
-      <p style="font-size:12px;color:var(--muted);margin:0 0 12px;">Based on ${c.yieldTPerHa} t/ha (the low end of the planning range) at the unverified planning price of ${NAIRA(PLANNING_BASKET_PRICE)}/50kg basket. This is a scenario, not a forecast — it excludes the real possibility of partial or total crop loss, and will be replaced by actual figures above as the cycle progresses.</p>
-      <div class="grid3">
-        <div><div class="label">Projected revenue</div><div style="font-size:18px;font-weight:800;color:var(--gold);">${NAIRA(revenue)}</div><div style="font-size:11px;color:var(--muted);">${c.baskets} baskets</div></div>
-        <div><div class="label">Total budget</div><div style="font-size:18px;font-weight:800;">${NAIRA(BUDGET.total)}</div></div>
-        <div><div class="label">Projected margin</div><div style="font-size:18px;font-weight:800;color:${margin>=0?'var(--green)':'#B23B3B'}">${NAIRA(margin)}</div></div>
-      </div>
-    </div>
-  `;
-}
-
-function renderFinance() {
-  const { totalSpent, totalRevenue, surplus, spentByCategory } = totals();
-  const planRows = [["Production envelope",BUDGET.production],["Reserve",BUDGET.reserve],["Admin/contingency",BUDGET.admin]];
-  const catEntries = Object.entries(spentByCategory).sort((a,b)=>b[1]-a[1]);
-  return `
-    <div class="eyebrow">FINANCE</div>
-    <h1 class="page-title">Capital & Unit Economics</h1>
-    <p class="sub">Planning envelopes on the left, what's actually happened on the right.</p>
-    <div class="grid2" style="margin-top:16px;">
-      <div class="card">
-        <div class="section-title">Planning envelope (${NAIRA(BUDGET.total)})</div>
-        ${planRows.map(([l,a])=>`<div class="list-row"><span>${l}</span><b>${NAIRA(a)}</b></div>`).join("")}
-      </div>
-      <div class="card">
-        <div class="section-title">Actual spend by category</div>
-        ${catEntries.length? catEntries.map(([c,a])=>`<div class="list-row"><span>${c}</span><b>${NAIRA(a)}</b></div>`).join("") : `<div style="color:var(--muted);font-size:13px;">Nothing logged yet — add expenses from the Tomato Cycle tab.</div>`}
-      </div>
-    </div>
-    <div class="card">
-      <div class="section-title">Cash position — actual, logged data</div>
-      <div class="grid3">
-        <div><div class="label">Spent</div><div style="font-size:19px;font-weight:800;">${NAIRA(totalSpent)}</div></div>
-        <div><div class="label">Revenue</div><div style="font-size:19px;font-weight:800;">${NAIRA(totalRevenue)}</div></div>
-        <div><div class="label">Surplus</div><div style="font-size:19px;font-weight:800;color:${surplus>=0?'var(--green)':'#B23B3B'}">${NAIRA(surplus)}</div></div>
-      </div>
-    </div>
-    ${renderProjection()}
-    <div class="card">
-      <div class="section-title">Financial control rules</div>
-      ${accordion("r1","Rule 01 · Separate operating cash from retained capital","Money for the next cycle must not be confused with long-term retained capital. The \u20a6400m target is a strategic gate, not an operating balance.")}
-      ${accordion("r2","Rule 02 · Every unit shows its own economics","Tomato, ginger, poultry, aquaculture and future units each show their own revenue, cost and reinvestment capacity.")}
-      ${accordion("r3","Rule 03 · One-third retained, two-thirds reinvested","Official policy after a successful cycle: \u2153 of net proceeds is retained as capital/reserve, \u2154 is reinvested into the next cycle.")}
-      ${accordion("r4","Rule 04 · Debt is conditional","Borrowing may be considered when the use is productive, downside is controlled and repayment is supported by predictable cash flow.")}
-    </div>
-  `;
-}
-
-function renderGinger() {
-  const portfolio = [
-    ["Sesame","Best first aggregation crop — fragmented farmers, storable, strong export demand","CORE"],
-    ["Ginger","Highest-value processing candidate; full scale only after a proven learning cycle","CORE"],
-    ["Cashew","Major future processing vertical","CORE"],
-    ["Cocoa","Premium, traceability-led export vertical","CORE"],
-    ["Shea","Value-add ingredient opportunity","CORE"],
-    ["Hibiscus","Complementary crop, same farmer network","NETWORK"],
-  ];
-  return `
-    <div class="eyebrow">COMMODITY PORTFOLIO</div>
-    <h1 class="page-title">Six commodities, one coordinated network</h1>
-    <p class="sub">~20 candidates were scored across 15 weighted dimensions — GreenX value-creation, farmer economics, processing and export demand, not just how much of a crop Nigeria produces. Tomato is the pilot/proof-of-concept commodity — not part of this long-term core.</p>
-    <div class="card" style="margin-top:16px;">
-      <div class="section-title">The core six</div>
-      ${portfolio.map(([name,role,tier])=>`
-        <div class="list-row">
-          <div><b>${name}</b> <span class="badge" style="background:${tier==='CORE'?'var(--greentint)':'#EAF1F8'};color:${tier==='CORE'?'var(--green)':'#3B638E'};margin-left:6px;">${tier}</span><div class="list-sub" style="margin-top:2px;">${role}</div></div>
-        </div>`).join("")}
-    </div>
-
-    <div class="card">
-      <div class="section-title">Ginger — the deepest-researched commodity so far</div>
-      <p style="font-size:12.5px;color:var(--muted);margin:0 0 10px;">A deliberate two-phase entry: prove it small (Kaduna/Nasarawa/Benue), then scale it with real numbers behind it.</p>
-    </div>
-    <div class="grid2">
-      <div class="card">
-        <span class="badge" style="background:#EAF1F8;color:#3B638E;">NEXT</span>
-        <div class="section-title" style="margin-top:8px;">Phase 1 — Learning Cycle</div>
-        <p style="font-size:13px;color:var(--muted);line-height:1.6;">~1 hectare, rented not purchased, in Kaduna, Nasarawa or Benue. Tests fresh and dried channels separately. The goal is verified cost, yield, drying loss and buyer data from GreenX's own land — not revenue.</p>
-      </div>
-      <div class="card">
-        <span class="badge" style="background:var(--goldtint);color:var(--gold);">GATED</span>
-        <div class="section-title" style="margin-top:8px;">Phase 2 — Commercial Scale-Up</div>
-        <p style="font-size:13px;color:var(--muted);line-height:1.6;">Only approached once Phase 1 validates the model. Field estimates: ~\u20a615,000,000/ha investment; \u20a680\u2013100M+/ha potential return under good management. Roughly 5\u00d7 the entire tomato budget — treated with matching caution.</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="section-title">Why ginger, and why not just Kaduna alone</div>
-      <p style="font-size:13px;color:var(--muted);line-height:1.7;">Nigeria is the world's second-largest ginger producer and consumer after India — roughly 764,000 tonnes produced and 641,000 tonnes consumed (2020\u20132024). Kaduna produces ~75% of that, but a 2022\u201323 fungal-disease outbreak there hurt production badly — so Nasarawa and Benue form a deliberate diversification network, not backups of convenience. Exports concentrate around India (~36% of value), the UAE (~17%) and Sudan (~10%). The 2024 average export price was ~$1,039/tonne, up 22% year-on-year — though historically export prices have swung as high as $10,553/tonne (2012), a reminder these are volatile, not fixed.</p>
-    </div>
-    <div class="card">
-      <div class="section-title">Global reference export pricing</div>
-      ${[["Fresh, washed & graded","$1,400\u20131,800/t FOB"],["Organic fresh","$1,900\u20132,300/t FOB"],["IQF frozen","$2,200\u20132,700/t CIF (EU)"],["Sliced/powdered","$3,000\u20133,500/t FOB"],["Diced/shredded (OEM/ODM)","$3,200\u20133,700/t"]]
-        .map(([l,p])=>`<div class="list-row"><span>${l}</span><b>${p}</b></div>`).join("")}
-    </div>
-    <div class="card">
-      <div class="section-title">Where the other crops sit</div>
-      ${[["Sesame & Cashew","Distributed network: Benue, Nasarawa, Kogi, Jigawa"],["Shea","Niger State"],["Cocoa","Ondo primary; Osun, Ekiti, Cross River secondary"],["Kogi","Recurs as a multi-commodity hub — sesame, cashew, cocoa, logistics"]]
-        .map(([l,p])=>`<div class="list-row"><span>${l}</span><span style="color:var(--muted);font-size:12.5px;">${p}</span></div>`).join("")}
-    </div>
-  `;
-}
-
-function renderPartners() {
-  const partnerGroups = [
-    ["Finance & guarantees", "NIRSAL, Bank of Agriculture (BOA), NAIC, World Bank AGROW, AfDB/SAPZ"],
-    ["Export & standards", "Nigerian Export Promotion Council (NEPC), NAQS"],
-    ["Knowledge & development", "AGRA, IITA, Heifer International"],
-    ["Commercial banks", "Evaluated on what GreenX offers vs. what GreenX needs — not approached generically"],
-  ];
-  const moatLayers = [
-    "Verified identity","Farm registry","Production records","Traceable lots","Quality history",
-    "Predictable supply","Infrastructure","Buyer relationships","Processing capability",
-    "Financing capability","Operating knowledge","GreenX OS as coordinator",
-  ];
-  return `
-    <div class="eyebrow">PARTNER ECOSYSTEM & MOAT</div>
-    <h1 class="page-title">We don't have a moat yet. Here's how we build one.</h1>
-    <p class="sub">GreenX's own research is direct about this: the advantage that makes GreenX hard to copy does not exist today. What exists is a credible, evidence-based pathway to build it — and a set of real partners GreenX plugs into rather than trying to replace.</p>
-
-    <div class="card" style="margin-top:16px;">
-      <div class="section-title">Buyers matter more than funders, early on</div>
-      <p style="font-size:13px;color:var(--muted);line-height:1.7;">Market access is what makes farmer participation worthwhile — more so than early-stage finance. GreenX plugs into Nigeria's existing export ecosystem rather than duplicating it.</p>
-    </div>
-
-    <div class="card">
-      <div class="section-title">Partner ecosystem</div>
-      ${partnerGroups.map(([label,names])=>`
-        <div class="list-row">
-          <div><b>${label}</b><div class="list-sub" style="margin-top:2px;">${names}</div></div>
-        </div>`).join("")}
-    </div>
-
-    <div class="card">
-      <div class="section-title">The 12-layer moat pathway</div>
-      <p style="font-size:12.5px;color:var(--muted);margin:0 0 10px;">A verified agricultural transaction graph, built layer by layer over years — real only if farmers trust GreenX, data stays accurate, transactions actually occur, and GreenX holds legitimate rights to the data.</p>
-      <div class="grid2">
-        ${moatLayers.map((t,i)=>`
-          <div class="list-row"><span style="color:var(--gold);font-weight:800;margin-right:8px;">${String(i+1).padStart(2,'0')}</span><span>${t}</span></div>
-        `).join("")}
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="section-title">Distribution risk, named honestly</div>
-      <p style="font-size:13px;color:var(--muted);line-height:1.7;">Over-relying on a single NGO or partner for farmer acquisition would mean GreenX doesn't actually own its own distribution. Farmer acquisition is tracked as a 7-level funnel — Reached, Registered, Onboarded, Active, Verified, Economically Active, Retained — precisely so this dependency can be measured and managed, not discovered too late.</p>
-    </div>
-  `;
-}
-
-function renderSupporters() {
-  const { totalSpent, totalRevenue } = totals();
-  const pct = Math.max(0, Math.min(100, (totalSpent/BUDGET.total)*100));
-  const tiers = [
-    ["Any amount","Believer","Named recognition, cycle updates, harvest photos"],
-    ["Mid-range","Backer","Everything above, plus a produce allocation or discount once the cycle sells"],
-    ["Cycle-defining","Founding Partner","Everything above, plus an optional goodwill bonus (1.1\u00d7\u20131.3\u00d7) if this cycle succeeds"],
-  ];
-  return `
-    <div class="eyebrow">SUPPORTER PORTAL</div>
-    <h1 class="page-title">See the enterprise before deciding to support it.</h1>
-    <p class="sub">Real cycle progress, not a static pitch. No shares, no board seat — support here is goodwill, tiered and transparent.</p>
-    <div class="card" style="margin-top:16px;">
-      <div class="section-title">Cycle 01 — live progress</div>
-      <div class="progress"><div class="progress-fill" style="width:${pct}%;background:var(--gold)"></div></div>
-      <div class="row-between" style="font-size:12px;color:var(--muted);margin-top:6px;">
-        <span>${NAIRA(totalSpent)} deployed</span><span>${NAIRA(BUDGET.total)} target</span>
-      </div>
-      ${totalRevenue>0?`<div style="margin-top:10px;font-size:13px;">Revenue so far: <b>${NAIRA(totalRevenue)}</b></div>`:''}
-    </div>
-    <div class="grid3">
-      ${tiers.map(([level,tier,desc])=>`
-        <div class="card">
-          <div class="label">${level}</div>
-          <div style="font-size:15px;font-weight:800;margin:5px 0 8px;">${tier}</div>
-          <p style="font-size:12.5px;color:var(--muted);line-height:1.55;margin:0;">${desc}</p>
-        </div>`).join("")}
-    </div>
-    <div class="card">
-      <p class="quote">"The enterprise is not trying to look like an agro-industrial group before it has earned the right to become one."</p>
-    </div>
-    <div class="card">
-      <div class="section-title">Ready to support, or have questions?</div>
-      <div style="font-size:13.5px;line-height:1.9;">
-        <a href="mailto:greenxfarm@gmail.com" style="color:var(--green);font-weight:700;text-decoration:none;">greenxfarm@gmail.com</a><br/>
-        <a href="tel:+2348076673404" style="color:var(--green);font-weight:700;text-decoration:none;">+234 807 667 3404</a> <span style="color:var(--muted);font-weight:400;">(also WhatsApp)</span>
-      </div>
-    </div>
-  `;
-}
-
-function renderGovernance() {
-  const founders = [
-    ["Abubakar Habib Haruna","CEO — Strategy & Commercial Development","Where are we going, why, and how do we make it commercially viable?","Market \u2192 Money \u2192 Strategy"],
-    ["Emmanuel Onyilo","CEO — Operations & Agricultural Development","How do we execute this properly, repeatedly and at the required standard?","Farm \u2192 Process \u2192 Execution"],
-  ];
-  return `
-    <div class="eyebrow">GOVERNANCE</div>
-    <h1 class="page-title">Founders & Decision Architecture</h1>
-    <p class="sub">Equal ownership doesn't mean identical responsibilities — two complementary leadership centres, one enterprise.</p>
-    <div class="grid2" style="margin-top:16px;">
-      ${founders.map(([name,role,q,focus])=>`
-        <div class="card">
-          <div class="founder-name">${name}</div>
-          <div class="founder-role">${role}</div>
-          <p style="font-size:13px;color:var(--muted);line-height:1.6;margin:0 0 8px;">"${q}"</p>
-          <div style="font-size:12px;font-weight:700;">${focus}</div>
-        </div>`).join("")}
-    </div>
-    <div class="card">
-      <div class="section-title">50/50 decision architecture</div>
-      <p style="font-size:13px;color:var(--muted);line-height:1.6;">Major disagreements shouldn't become founder-versus-founder contests. The intended mechanism is structured discussion, followed where necessary by independent expert input and an advisory/board mechanism.</p>
-      <div class="rule">Initial founder compensation: no salary from the business while the enterprise is in its early capital-building stage, subject to future formal governance and legal documentation.</div>
-    </div>
-  `;
-}
-
-function renderAuthArea() {
-  const el = document.getElementById("auth-area");
-  if (!el) return;
-  if (state.session) {
-    el.innerHTML = `
-      <div class="owner-pill">${icon('shield',12)} Owner: ${state.session.email}</div>
-      <button class="auth-link" id="logout-btn" style="display:block;margin-top:6px;">Log out</button>
-    `;
-    return;
-  }
-  if (!state.showLogin) {
-    el.innerHTML = `<button class="auth-link" id="show-login-btn">Owner login</button>`;
-    return;
-  }
-  el.innerHTML = `
-    <div class="auth-box">
-      <input type="email" id="login-email" placeholder="Email" autocomplete="username" />
-      <input type="password" id="login-password" placeholder="Password" autocomplete="current-password" />
-      <button id="login-submit">Log in</button>
-      ${state.authError ? `<div class="auth-error">${state.authError}</div>` : ""}
-      <button class="auth-link" id="cancel-login-btn" style="margin-top:6px;">Cancel</button>
-    </div>
-  `;
-}
-
-function updateAuthArea() {
-  renderAuthArea();
-  attachAuthHandlers();
-}
-
-function attachAuthHandlers() {
-  const showBtn = document.getElementById("show-login-btn");
-  if (showBtn) showBtn.addEventListener("click", () => { state.showLogin = true; state.authError = null; updateAuthArea(); });
-
-  const cancelBtn = document.getElementById("cancel-login-btn");
-  if (cancelBtn) cancelBtn.addEventListener("click", () => { state.showLogin = false; state.authError = null; updateAuthArea(); });
-
-  const logoutBtn = document.getElementById("logout-btn");
-  if (logoutBtn) logoutBtn.addEventListener("click", () => { logout(); });
-
-  const submitBtn = document.getElementById("login-submit");
-  if (submitBtn) submitBtn.addEventListener("click", async () => {
-    const email = document.getElementById("login-email").value.trim();
-    const password = document.getElementById("login-password").value;
-    if (!email || !password) return;
-    submitBtn.textContent = "Logging in…";
-    try {
-      await login(email, password);
-      state.showLogin = false;
-      state.authError = null;
-      render();
-    } catch (err) {
-      state.authError = "Couldn't log in — check your email and password.";
-      updateAuthArea();
-    }
-  });
-}
-
-function render() {
-  renderNav();
-  updateAuthArea();
-  const pendingCount = loadPending().length;
-  const pendingEl = document.getElementById("pending-note");
-  if (pendingEl) {
-    pendingEl.innerHTML = pendingCount
-      ? `<div class="side-note" style="border-color:var(--gold);color:#E8C77A;margin-top:8px;">${pendingCount} item${pendingCount>1?'s':''} saved offline — will sync automatically once you're back online.</div>`
-      : "";
-  }
-  const main = document.getElementById("main");
-  const errorBanner = state.loadError
-    ? `<div class="card" style="border-color:#E7B8B8;background:#FDF3F3;color:#8A2E2E;font-size:13px;">${state.loadError}</div>`
-    : "";
-  let body = "";
-  try {
-    if (state.tab === "overview") body = renderOverview();
-    else if (state.tab === "operations") body = renderOperations();
-    else if (state.tab === "finance") body = renderFinance();
-    else if (state.tab === "ginger") body = renderGinger();
-    else if (state.tab === "partners") body = renderPartners();
-    else if (state.tab === "supporters") body = renderSupporters();
-    else if (state.tab === "governance") body = renderGovernance();
-  } catch (err) {
-    console.error("Tab render failed:", err);
-    body = `<div class="card">Something went wrong showing this tab. Try switching away and back, or reload the page.</div>`;
-  }
-  main.innerHTML = errorBanner + body;
-  try { attachHandlers(); } catch (err) { console.error("attachHandlers failed:", err); }
-}
-
-function friendlyError(err, action) {
-  if (err && err.message === "SESSION_EXPIRED") {
-    saveSession(null);
-    render();
-    return "Your login session expired — please log back in and try again.";
-  }
-  return `Couldn't ${action} — check your connection and try again.`;
-}
-
-function attachHandlers() {
-  const toggleExp = document.getElementById("toggle-expense-form");
-  if (toggleExp) toggleExp.addEventListener("click", () => { state.showExpenseForm = !state.showExpenseForm; render(); });
-  const toggleSale = document.getElementById("toggle-sale-form");
-  if (toggleSale) toggleSale.addEventListener("click", () => { state.showSaleForm = !state.showSaleForm; render(); });
-
-  const expSave = document.getElementById("exp-save");
-  if (expSave) expSave.addEventListener("click", async () => {
-    const cost = document.getElementById("exp-cost").value;
-    const expDate = document.getElementById("exp-date").value;
-    if (!expDate) { alert("Please enter a date before saving this expense."); return; }
-    if (!cost || state.saving) return;
-    state.saving = true;
-    expSave.textContent = "Saving…";
-    const payload = {
-      date: expDate,
-      category: document.getElementById("exp-category").value,
-      description: document.getElementById("exp-desc").value,
-      total_cost: cost,
-    };
-    try {
-      const row = await sbInsert("expenses", payload);
-      state.expenses.unshift(row);
-      state.showExpenseForm = false;
-    } catch (err) {
-      if (isNetworkError(err)) {
-        const localId = "local-" + uid();
-        queuePending("expenses", payload, localId);
-        state.expenses.unshift({ ...payload, id: localId, pending: true });
-        state.showExpenseForm = false;
-      } else {
-        console.error(err);
-        alert(friendlyError(err, "save that expense"));
-      }
-    } finally {
-      state.saving = false;
-      render();
-    }
-  });
-
-  const saleSave = document.getElementById("sale-save");
-  if (saleSave) saleSave.addEventListener("click", async () => {
-    const baskets = document.getElementById("sale-baskets").value;
-    const saleDate = document.getElementById("sale-date").value;
-    if (!saleDate) { alert("Please enter a date before saving this sale."); return; }
-    if (!baskets || state.saving) return;
-    state.saving = true;
-    saleSave.textContent = "Saving…";
-    const payload = {
-      date: saleDate,
-      baskets,
-      price: document.getElementById("sale-price").value,
-      buyer: document.getElementById("sale-buyer").value,
-    };
-    try {
-      const row = await sbInsert("sales", payload);
-      state.sales.unshift(row);
-      state.showSaleForm = false;
-    } catch (err) {
-      if (isNetworkError(err)) {
-        const localId = "local-" + uid();
-        queuePending("sales", payload, localId);
-        state.sales.unshift({ ...payload, id: localId, pending: true });
-        state.showSaleForm = false;
-      } else {
-        console.error(err);
-        alert(friendlyError(err, "save that sale"));
-      }
-    } finally {
-      state.saving = false;
-      render();
-    }
-  });
-
-  document.querySelectorAll("[data-remove-expense]").forEach(btn => btn.addEventListener("click", async () => {
-    const id = btn.dataset.removeExpense;
-    try {
-      await sbDelete("expenses", id);
-      state.expenses = state.expenses.filter(e => e.id !== id);
-      render();
-    } catch (err) {
-      console.error(err);
-      alert(friendlyError(err, "remove that"));
-    }
-  }));
-  document.querySelectorAll("[data-remove-sale]").forEach(btn => btn.addEventListener("click", async () => {
-    const id = btn.dataset.removeSale;
-    try {
-      await sbDelete("sales", id);
-      state.sales = state.sales.filter(s => s.id !== id);
-      render();
-    } catch (err) {
-      console.error(err);
-      alert(friendlyError(err, "remove that"));
-    }
-  }));
-  document.querySelectorAll("[data-acc]").forEach(btn => btn.addEventListener("click", () => {
-    const id = btn.dataset.acc;
-    accOpen[id] = !accOpen[id];
-    render();
-  }));
-}
-
-loadSession();
-render();
-loadData().then(() => trySyncPending());
-window.addEventListener("online", trySyncPending);
-setInterval(trySyncPending, 30000);
-</script>
-<script>
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-      navigator.serviceWorker.register("sw.js").catch(() => {});
-    });
-  }
-
-  let deferredInstallPrompt = null;
-  const installBtn = document.getElementById("install-btn");
-
-  window.addEventListener("beforeinstallprompt", (e) => {
-    e.preventDefault();
-    deferredInstallPrompt = e;
-    if (installBtn) installBtn.style.display = "inline-block";
-  });
-
-  window.addEventListener("appinstalled", () => {
-    deferredInstallPrompt = null;
-    if (installBtn) installBtn.style.display = "none";
-  });
-
-  if (installBtn) {
-    installBtn.addEventListener("click", async () => {
-      if (!deferredInstallPrompt) return;
-      installBtn.textContent = "…";
-      deferredInstallPrompt.prompt();
-      await deferredInstallPrompt.userChoice;
-      deferredInstallPrompt = null;
-      installBtn.style.display = "none";
-    });
-  }
-</script>
-</body>
-</html>
+    throw new E
