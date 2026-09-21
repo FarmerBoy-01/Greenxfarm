@@ -21,7 +21,7 @@
   .brand{display:flex;align-items:center;gap:10px;padding:0 2px;}
   .install-btn{margin-left:auto;background:var(--gold);color:var(--deep);border:none;padding:6px 11px;
     border-radius:999px;font-size:10.5px;font-weight:800;cursor:pointer;font-family:inherit;flex-shrink:0;}
-  .brand-mark{width:34px;height:34px;border-radius:9px;flex-shrink:0;overflow:hidden;display:block;}
+  .brand-mark{width:34px;height:34px;flex-shrink:0;display:block;}
   .brand-name{font-size:17px;font-weight:800;color:#fff;line-height:1.1;}
   .brand-sub{font-size:10px;color:#8FAC9A;}
   nav{margin-top:14px;display:flex;flex-direction:row;gap:6px;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch;}
@@ -121,7 +121,20 @@
 <div class="app">
   <aside>
     <div class="brand">
-      <img class="brand-mark" src="sidebar-logo.png" alt="GreenX" />
+      <svg class="brand-mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GreenX logo">
+        <defs>
+          <linearGradient id="gx-bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#1F6B3E"/>
+            <stop offset="1" stop-color="#0F3320"/>
+          </linearGradient>
+        </defs>
+        <rect width="40" height="40" rx="10" fill="url(#gx-bg)"/>
+        <path d="M20 6 C 28 12, 31 21, 27 28 C 25 32, 22 34, 20 34 C 18 34, 15 32, 13 28 C 9 21, 12 12, 20 6 Z" fill="#2E8A57"/>
+        <path d="M20 9 V 33" stroke="#E3F1E7" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M20 17 C 24 17, 27 19, 28 22" stroke="#E3F1E7" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+        <path d="M20 24 C 16 24, 13 26, 12 29" stroke="#E3F1E7" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+        <circle cx="20" cy="6" r="1.8" fill="#B9822E"/>
+      </svg>
       <div>
         <div class="brand-name">GreenX OS</div>
         <div class="brand-sub">Agro-Industrial Group</div>
@@ -176,7 +189,6 @@
   <div class="legal">
     Nothing on this app is an offer of securities or investment advice. Figures shown are conservative planning assumptions from the GreenX business plan, or actual logged data where stated — never a guarantee of return. Support to GreenX carries real risk, including partial or total loss.
   </div>
-</footer>
 </footer>
 
 <script>
@@ -509,7 +521,7 @@ function renderOperations() {
       <div class="field"><label>Category</label><select id="exp-category">${CATEGORIES.map(c=>`<option value="${c}">${c}</option>`).join("")}</select></div>
       <div class="field"><label>Description</label><input id="exp-desc" placeholder="e.g. Diesel for pump"/></div>
       <div class="field"><label>Total cost (\u20a6)</label><input type="number" id="exp-cost" placeholder="0"/></div>
-      <div class="field"><label>Receipt photo <span style="color:#B23B3B;">(required for \u20a650,000+)</span></label><input type="file" accept="image/*" capture="environment" id="exp-receipt"/></div>
+      <div class="field"><label>Receipt photo <span style="color:var(--muted);font-weight:400;">(optional)</span></label><input type="file" accept="image/*" capture="environment" id="exp-receipt"/></div>
       <button class="save-btn" id="exp-save">Save expense</button>
     </div>` : "";
 
@@ -901,7 +913,6 @@ function attachHandlers() {
   const toggleSale = document.getElementById("toggle-sale-form");
   if (toggleSale) toggleSale.addEventListener("click", () => { state.showSaleForm = !state.showSaleForm; render(); });
 
-  const RECEIPT_THRESHOLD = 50000;
   const expSave = document.getElementById("exp-save");
   if (expSave) expSave.addEventListener("click", async () => {
     const cost = document.getElementById("exp-cost").value;
@@ -909,10 +920,6 @@ function attachHandlers() {
     const receiptFile = document.getElementById("exp-receipt").files[0];
     if (!expDate) { alert("Please enter a date before saving this expense."); return; }
     if (!cost || state.saving) return;
-    if (Number(cost) >= RECEIPT_THRESHOLD && !receiptFile) {
-      alert(`Please attach a receipt photo — required for expenses of ${NAIRA(RECEIPT_THRESHOLD)} or more.`);
-      return;
-    }
     state.saving = true;
     expSave.textContent = "Saving…";
     const payload = {
